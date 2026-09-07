@@ -15,6 +15,12 @@ Manifest dùng để thêm trong tab Nguồn:
 https://raw.githubusercontent.com/ilywd/ilywd-3105-repo/main/repo.json
 ```
 
+Web tạo và xem trước cấu hình màu:
+
+```text
+https://ilywd-color-studio.truongk593.chatgpt.site
+```
+
 Nếu repo đạt yêu cầu, nhờ bạn xem xét thêm URL manifest trên vào `sources.json`
 của catalog chính thức. Repo chỉ phát hành các gói `.3105` đã có SHA-256, dải iOS
 hỗ trợ và đã thử Apply/Restore. Không có token, cookie hoặc dữ liệu xác thực trong

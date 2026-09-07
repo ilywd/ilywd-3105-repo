@@ -51,8 +51,21 @@ Người dùng thêm URL này trong tab **Nguồn** của 3105. Không cần tí
 vào ứng dụng. Nếu tác giả đồng ý đưa repo vào catalog mặc định, chỉ cần thêm URL
 trên vào `sources.json` của catalog chính thức.
 
+## Color Studio
+
+Web tạo cấu hình màu trung tính đã được xuất bản tại:
+
+```text
+https://ilywd-color-studio.truongk593.chatgpt.site
+```
+
+Web cho phép chọn màu, độ trong suốt và kiểu hiển thị, xem trước trực tiếp rồi tải
+`location-style.json`. Bốn gói demo trong repo dùng cùng định dạng dữ liệu này tại
+`Documents/3105/location-style.json` của app mẫu `com.ilywd.locationdemo`.
+
 ## Trạng thái hiện tại
 
-`repo.json` đang là manifest hợp lệ nhưng chưa công bố package thật. Điều này có
-chủ ý: chưa có Bundle ID, đường dẫn đích và định dạng màu thật thì không nên tạo
-một Patch giả có khả năng ghi nhầm dữ liệu.
+Repo có bốn package `.3105` demo: đỏ, xanh dương, vàng và tím. Tất cả chỉ trỏ tới
+Bundle ID trung tính `com.ilywd.locationdemo` và file thử nghiệm
+`Documents/3105/location-style.json`; không chứa tên hoặc đường dẫn của game bên
+thứ ba. Đây là bộ minh hoạ tích hợp Repo, không phải cấu hình sản xuất.
