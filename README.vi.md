@@ -65,7 +65,5 @@ gói demo trong repo dùng đích trung tính `com.test` tại `Documents/ilywd/
 
 ## Trạng thái hiện tại
 
-Repo có bốn package `.3105` demo: đỏ, xanh dương, vàng và tím. Tất cả chỉ trỏ tới
-Bundle ID trung tính `com.test` và file thử nghiệm `Documents/ilywd/test`; không
-chứa tên hoặc đường dẫn của game bên
-thứ ba. Đây là bộ minh hoạ tích hợp Repo, không phải cấu hình sản xuất.
+Repo công khai không chứa package `.3105`, file nguồn màu, builder hoặc tài
+nguyên riêng tư. Package thật chỉ được cung cấp riêng khi chủ sở hữu cho phép.
