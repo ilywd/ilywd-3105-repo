@@ -1,0 +1,27 @@
+{
+  "identifier": "location-color",
+  "kind": "patch",
+  "name": "Location Color",
+  "author": "ilywd",
+  "version": "1.0.0",
+  "summary": "Tuỳ chỉnh màu hiển thị định vị cho ứng dụng được hỗ trợ.",
+  "description": "Chỉ dùng với ứng dụng và dữ liệu thuộc quyền quản lý của bạn.",
+  "tags": [
+    "Location",
+    "Color",
+    "Customization"
+  ],
+  "publishedAt": "2026-09-07T00:00:00Z",
+  "download": "packages/location-color.3105",
+  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "size": 0,
+  "supportedOS": [
+    {
+      "minimum": "17.0",
+      "maximum": "27.0"
+    }
+  ],
+  "changelog": "Bản mẫu đầu tiên.",
+  "featured": true,
+  "isPrivate": false
+}
