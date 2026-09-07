@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "fields": [
+    {
+      "id": "location_enabled",
+      "label": "Bật màu định vị",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "location_color",
+      "label": "Màu HEX",
+      "type": "string",
+      "default": "#FF3B30"
+    },
+    {
+      "id": "location_opacity",
+      "label": "Độ trong suốt (0-1)",
+      "type": "double",
+      "default": 1.0
+    },
+    {
+      "id": "location_style",
+      "label": "Kiểu hiển thị",
+      "type": "string",
+      "default": "default",
+      "options": [
+        {
+          "label": "Mặc định",
+          "value": "default"
+        },
+        {
+          "label": "Viền sáng",
+          "value": "glow"
+        },
+        {
+          "label": "Tối giản",
+          "value": "minimal"
+        }
+      ]
+    }
+  ]
+}
