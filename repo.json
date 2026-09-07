@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "identifier": "com.ilywd.3105.tools",
+  "name": "ilywd Repository",
+  "description": "Kho Patch độc lập dành cho các công cụ tuỳ chỉnh dữ liệu tương thích với 3105.",
+  "icon": "https://avatars.githubusercontent.com/u/320958254?v=4",
+  "packages": []
+}
