@@ -2,42 +2,28 @@
   "schemaVersion": 1,
   "fields": [
     {
-      "id": "location_enabled",
-      "label": "Bật màu định vị",
-      "type": "boolean",
-      "default": true
-    },
-    {
-      "id": "location_color",
-      "label": "Màu HEX",
+      "id": "gun_color",
+      "label": "Màu súng",
       "type": "string",
-      "default": "#FF3B30"
+      "default": "#FFCC00"
     },
     {
-      "id": "location_opacity",
-      "label": "Độ trong suốt (0-1)",
+      "id": "gun_opacity",
+      "label": "Độ trong màu (0.05-1)",
       "type": "double",
       "default": 1.0
     },
     {
-      "id": "location_style",
-      "label": "Kiểu hiển thị",
+      "id": "outline_color",
+      "label": "Màu viền",
       "type": "string",
-      "default": "default",
-      "options": [
-        {
-          "label": "Mặc định",
-          "value": "default"
-        },
-        {
-          "label": "Viền sáng",
-          "value": "glow"
-        },
-        {
-          "label": "Tối giản",
-          "value": "minimal"
-        }
-      ]
+      "default": "#FF3B30"
+    },
+    {
+      "id": "outline_width",
+      "label": "Độ dày viền (0.1-20)",
+      "type": "double",
+      "default": 3.01
     }
   ]
 }

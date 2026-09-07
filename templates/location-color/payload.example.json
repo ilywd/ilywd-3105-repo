@@ -1,8 +1,9 @@
 {
-  "locationIndicator": {
-    "enabled": "{{location_enabled}}",
-    "color": "{{location_color}}",
-    "opacity": "{{location_opacity}}",
-    "style": "{{location_style}}"
+  "schemaVersion": 1,
+  "colors": {
+    "gunHex": "{{gun_color}}",
+    "gunOpacity": "{{gun_opacity}}",
+    "outlineHex": "{{outline_color}}",
+    "outlineWidth": "{{outline_width}}"
   }
 }

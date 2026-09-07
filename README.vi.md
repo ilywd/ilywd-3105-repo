@@ -59,13 +59,13 @@ Web tạo cấu hình màu trung tính đã được xuất bản tại:
 https://ilywd-color-studio.truongk593.chatgpt.site
 ```
 
-Web cho phép chọn màu, độ trong suốt và kiểu hiển thị, xem trước trực tiếp rồi tải
-`location-style.json`. Bốn gói demo trong repo dùng cùng định dạng dữ liệu này tại
-`Documents/3105/location-style.json` của app mẫu `com.ilywd.locationdemo`.
+Web đã lấy đúng bộ tham số từ `ilywd_3105_FREE_COLOR_TOOL`: tên patch, màu súng,
+màu viền, độ trong màu và độ dày viền. Kết quả được xuất thành cấu hình JSON; bốn
+gói demo trong repo dùng đích trung tính `com.test` tại `Documents/ilywd/test`.
 
 ## Trạng thái hiện tại
 
 Repo có bốn package `.3105` demo: đỏ, xanh dương, vàng và tím. Tất cả chỉ trỏ tới
-Bundle ID trung tính `com.ilywd.locationdemo` và file thử nghiệm
-`Documents/3105/location-style.json`; không chứa tên hoặc đường dẫn của game bên
+Bundle ID trung tính `com.test` và file thử nghiệm `Documents/ilywd/test`; không
+chứa tên hoặc đường dẫn của game bên
 thứ ba. Đây là bộ minh hoạ tích hợp Repo, không phải cấu hình sản xuất.

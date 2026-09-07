@@ -17,8 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 PACKAGE_DIR = ROOT / "packages"
 MAGIC = b"3105PATCH\x00"
 SCHEMA_VERSION = 3
-TARGET_BUNDLE = "com.ilywd.locationdemo"
-TARGET_PATH = "Documents/3105/location-style.json"
+TARGET_BUNDLE = "com.test"
+TARGET_PATH = "Documents/ilywd/test"
 CREATED_AT = datetime(2026, 9, 7, 0, 0, 0)
 
 PRESETS = [
@@ -36,12 +36,13 @@ def binary_plist(value: dict) -> bytes:
 def make_package(slug: str, label: str, color: str, project_id: str, rule_id: str) -> bytes:
     replacement = json.dumps(
         {
-            "locationIndicator": {
-                "color": color,
-                "enabled": True,
-                "opacity": 1.0,
-                "preset": slug,
-            }
+            "schemaVersion": 1,
+            "colors": {
+                "gunHex": color,
+                "gunOpacity": 1.0,
+                "outlineHex": "#FF3B30",
+                "outlineWidth": 3.01,
+            },
         },
         ensure_ascii=False,
         indent=2,
@@ -51,7 +52,7 @@ def make_package(slug: str, label: str, color: str, project_id: str, rule_id: st
     rule_uuid = str(uuid.UUID(rule_id)).upper()
     project = {
         "id": project_uuid,
-        "name": f"Location Color Demo – {label}",
+        "name": f"Color Tool Demo – {label}",
         "author": "ilywd",
         "isPrivate": False,
         "createdAt": CREATED_AT,
@@ -76,7 +77,7 @@ def make_package(slug: str, label: str, color: str, project_id: str, rule_id: st
     # Các gói demo cần build lặp lại cho cùng một checksum trong repo công khai.
     # Khóa này không dùng để giữ bí mật: định dạng public của 3105 luôn mang khóa
     # nội dung trong envelope. Domain separator giữ key/nonce riêng cho từng preset.
-    seed = hashlib.sha256(f"ilywd/3105/location-demo/{slug}/v1".encode()).digest()
+    seed = hashlib.sha256(f"ilywd/3105/color-tool-demo/{slug}/v2".encode()).digest()
     content_key = hashlib.sha256(b"content-key\0" + seed).digest()
     nonce = hashlib.sha256(b"nonce\0" + seed).digest()[:12]
     aad = f"3105PATCH/v{SCHEMA_VERSION}/payload/{project_uuid}".encode("utf-8")
