@@ -1,0 +1,8 @@
+{
+  "locationIndicator": {
+    "enabled": "{{location_enabled}}",
+    "color": "{{location_color}}",
+    "opacity": "{{location_opacity}}",
+    "style": "{{location_style}}"
+  }
+}
